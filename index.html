@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Scoop Ice Cream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍦 Sweet Scoop</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#flavors">Flavors</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="cart" onclick="showCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Happiness in Every Scoop!</h2>
+        <p>Discover your favorite ice cream flavors.</p>
+        <a href="#flavors" class="btn">Explore Flavors</a>
+    </section>
+
+    <section class="products" id="flavors">
+        <h2>Our Delicious Flavors</h2>
+
+        <div class="ice-cream-container">
+
+            <div class="card">
+                <div class="emoji">🍓</div>
+                <h3>Strawberry</h3>
+                <p>Sweet, fruity and refreshing.</p>
+                <h4>₹99</h4>
+                <button onclick="addToCart('Strawberry', 99)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🍫</div>
+                <h3>Chocolate</h3>
+                <p>Rich and creamy chocolate.</p>
+                <h4>₹119</h4>
+                <button onclick="addToCart('Chocolate', 119)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🍦</div>
+                <h3>Vanilla</h3>
+                <p>Classic creamy goodness.</p>
+                <h4>₹79</h4>
+                <button onclick="addToCart('Vanilla', 79)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Sweet Scoop 🍨</h3>
+        <p>Made with love and lots of ice cream!</p>
+        <p>© 2026 Sweet Scoop Ice Cream</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
